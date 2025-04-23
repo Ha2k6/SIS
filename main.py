@@ -15,7 +15,8 @@ app.add_middleware(
 )
 
 # Load the pre-trained model
-classifier = pipeline("text-classification", model="lvwerra/distilbert-imdb")
+classifier = pipeline("text-classification", model="mrm8488/bert-tiny-finetuned-fake-news-detection")
+
 
 # API Route for Fake News Detection
 @app.get("/predict/")
